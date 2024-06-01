@@ -1,0 +1,86 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffebcd;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #ff69b4;
+    color: #fff;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #ff1493;
+}
+
+.content, .gallery, .wishes {
+    max-width: 800px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.grandma-photo {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.message {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.gallery {
+    margin-top: 40px;
+}
+
+.gallery h2, .wishes h2 {
+    color: #ff69b4;
+}
+
+.photos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.photos img {
+    max-width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wishes {
+    margin-top: 40px;
+}
+
+.wish {
+    background-color: #e0f2f1;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+footer {
+    background-color: #ff69b4;
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    border-top: 5px solid #ff1493;
+}
