@@ -8,6 +8,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url('balloon.jpg'); /* Add your background image URL here */
+    background-size: cover; /* Cover the entire body with the background image */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
 }
 
 header {
@@ -20,17 +24,19 @@ header {
 }
 
 .content, .gallery, .wishes {
-    max-width: 800px;
-    margin: 20px;
+    width: 100%; /* Make the card wider */
+    margin: 20px auto; /* Center the card */
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
+    max-width: 1000px; /* Limit maximum width */
 }
 
 .grandma-photo {
-    max-width: 100%;
+    width: 100%; /* Make the picture wider */
+    max-width: 800px; /* Limit maximum width of the picture */
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -55,9 +61,12 @@ header {
 }
 
 .photos img {
-    max-width: 30%;
-    margin: 10px;
+    width: 100%; /* Make the image take up the full width of its container */
+    max-width: 100%; /* Ensure it doesn't exceed the container's width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the entire container */
     border-radius: 10px;
+    margin: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -80,7 +89,7 @@ footer {
     width: 100%;
     padding: 10px 0;
     text-align: center;
-    position: fixed;
-    bottom: 0;
     border-top: 5px solid #ff1493;
+    font-weight: bold;
+
 }
